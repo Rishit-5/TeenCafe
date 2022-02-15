@@ -11,7 +11,7 @@ export default function BootstrapNavbar() {
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Logo_example.svg/1280px-Logo_example.svg.png"
                             width="178"
                             height="30"
-                            className="d-inline-block align-bottom "
+                            className="d-inline-block align-bottom"
                         />{' '}
                     </Navbar.Brand>
                     <Nav className="justify-content-end text-white">
