@@ -1,11 +1,11 @@
 import React from 'react'
-import {Container, Navbar} from 'react-bootstrap'
+import {Container, Nav, Navbar} from 'react-bootstrap'
 export default function BootstrapNavbar() {
     return (
         <div>
-            <Navbar bg="dark" variant="dark" fixed="top">
+            <Navbar bg="dark" variant="dark" fixed="top" >
                 <Container>
-                    <Navbar.Brand href="home">
+                    <Navbar.Brand href="/">
                         <img
                             alt=""
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Logo_example.svg/1280px-Logo_example.svg.png"
@@ -13,8 +13,10 @@ export default function BootstrapNavbar() {
                             height="30"
                             className="d-inline-block align-bottom "
                         />{' '}
-                        React Bootstrap
                     </Navbar.Brand>
+                    <Nav className="justify-content-end text-white">
+                        <Nav.Link href="/signup" className="text-white">Sign Up</Nav.Link>
+                    </Nav>
                 </Container>
             </Navbar>
         </div>
