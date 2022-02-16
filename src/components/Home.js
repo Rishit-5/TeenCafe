@@ -1,12 +1,13 @@
 import React, {Component, useState} from 'react';
 import Carousel from "../BootstrapCarousel"
 import backImage from "../assets/gamingimage.jpg"
+import "./Home.css"
 const Home = () => {
     return (
         <div >
             <Carousel />
-            <div style = {{backgroundImage:`url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/upwk62362283-wikimedia-image.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=0be02c1d5a2e77bbfd07184097852c48)`}}>
-                <h1>About Us</h1>
+            <div className = "back">
+                <h1 className = "aboutUsHeader">About Us</h1>
                 <h4>Vision</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id finibus nisl, nec mollis nunc. Quisque suscipit diam eu laoreet consequat. Vestibulum erat ipsum, rhoncus in scelerisque sit amet, consectetur ut lorem. Maecenas volutpat condimentum elementum. Nam eget mauris et odio consequat tristique. Sed tempus suscipit mi, vitae cursus eros semper nec. Maecenas iaculis erat et purus scelerisque, et tempus justo sollicitudin. Donec mi augue, condimentum a ipsum eu, tincidunt semper urna.
 
