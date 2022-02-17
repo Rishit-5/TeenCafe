@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import BootstrapCarousel from './BootstrapCarousel';
 import BootstrapNavbar from "./BootstrapNavbar";
@@ -14,7 +13,7 @@ function App() {
                 <BootstrapNavbar />
                 <div className="pl-20">
                     <Switch>
-                        <Route exact path='/' component={Home} />]
+                        <Route exact path='/' component={Home} />
                         <Route exact path='/signup' component={SignUp} />
                     </Switch>
                 </div>

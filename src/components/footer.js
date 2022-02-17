@@ -1,17 +1,16 @@
 import React from "react";
 
+
 function Footer() {
     return (
         <div>
             <footer className="footer-distributed">
 
                 <div className="footer-left">
-
-                    <h3>Company<span>logo</span></h3>
-
-
+                <img src={require("../assets/inverselogo.png")} alt="footer-logo"/>
 
                 </div>
+                
 
                 <div className="footer-center">
 

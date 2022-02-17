@@ -1,6 +1,5 @@
 import React, {Component, useState} from 'react';
 import Carousel from "../BootstrapCarousel"
-import backImage from "../assets/gamingimage.jpg"
 import "./Home.css"
 const Home = () => {
     return (
