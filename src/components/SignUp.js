@@ -1,9 +1,9 @@
 import React, {Component, useState} from 'react';
-import Carousel from "../BootstrapCarousel"
+import Carousel from "../BootstrapCarousel";
 import {Form, Button} from "react-bootstrap";
 const SignUp = () => {
     return (
-        <div >
+        <div>
             <br />
             <br />
             <br />
@@ -42,8 +42,13 @@ const SignUp = () => {
                     Submit
                 </Button>
             </Form>
+            <br />
+            <br />
+            <br />
+            
 
         </div>
+      
     )
 }
 export default SignUp;
