@@ -56,9 +56,9 @@ const SignUp = () => {
                     <Form.Control type="text" placeholder="Last Name" required/>
                 </Form.Group>
 
-                <Form.Group className="mb-3" ref={emailRef} controlId="formBasicEmail">
+                <Form.Group className="mb-3">
                     <Form.Label>Email Address</Form.Label>
-                    <Form.Control type="text" placeholder="Email Address" required/>
+                    <Form.Control type="text" ref={emailRef} placeholder="Email Address" required/>
                 </Form.Group>
 
                 <Form.Group className="mb-3">
