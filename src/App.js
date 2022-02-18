@@ -5,11 +5,9 @@ import {BrowserRouter as Router, Route, Link, BrowserRouter, Switch} from 'react
 import Home from "./components/Home"
 import SignUp from "./components/SignUp";
 import Footer from "./components/footer"
-import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
     return (
-        <AuthProvider>
             <div className="App">
                 <BrowserRouter>
                     <BootstrapNavbar />
@@ -22,7 +20,6 @@ function App() {
                     <Footer />
                 </BrowserRouter>
             </div>
-        </AuthProvider>
 
     );
 }
