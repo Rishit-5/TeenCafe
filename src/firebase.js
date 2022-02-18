@@ -1,6 +1,6 @@
 /* Remember to create the env file and set them to REACT_APP_FIREBASE_API_KEY=...,REACT_APP_FIREBASE_AUTH_DOMAIN=..., etc*/
 
-import firebase from "firebase/app"
+import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
 
 const app = firebase.initializeApp({

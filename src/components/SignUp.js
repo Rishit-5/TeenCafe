@@ -1,16 +1,15 @@
 import React, {useState, useRef} from 'react';
-import {Form, Button} from "react-bootstrap";
+import {Form, Button, Alert} from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom"
+import { AuthProvider } from "../contexts/AuthContext"
+import { useAuth } from "../contexts/AuthContext" 
 
-/* import { AuthProvider } from "../contexts/AuthContext"
-   import { useAuth } from "../contexts/AuthContext" 
-*/
 
 const SignUp = () => {
 
     const passwordRef = useRef()
     const passwordConfirmRef = useRef() 
-    /* const { signup } = useAuth() */
+    const { signup } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -25,7 +24,7 @@ const SignUp = () => {
         try {
           setError("")
           setLoading(true)
-          await passwordRef.current.value /* wrap it in signup() for firebase auth ++ <AuthProvider></AuthProvider> in return value below*/
+          await signup(passwordRef.current.value) /* wrap it in signup() for firebase auth ++ <AuthProvider></AuthProvider> in return value below*/
           history.push("/")
         } catch {
           setError("Failed to create an account")
@@ -35,13 +34,16 @@ const SignUp = () => {
       }
 
 
+      
     return (
             <div>
             <br />
             <br />
             <br />
+            
             <h1 className="mb-3">Sign Up</h1>
             <Form className="mt-30 w-50 mx-auto" onSubmit={handleSubmit}>
+            {error && <Alert varient="danger">{error}</Alert>}
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>First Name</Form.Label>
                     <Form.Control type="text" placeholder="First Name" required/>
@@ -79,6 +81,7 @@ const SignUp = () => {
             <br />
             <br />
         </div>
+        
 
     )
 }
