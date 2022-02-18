@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/teencafe/static/css/main.100168e0.css",
+    "main.js": "/teencafe/static/js/main.fecd7019.js",
+    "static/js/787.4a634d08.chunk.js": "/teencafe/static/js/787.4a634d08.chunk.js",
+    "static/media/trytogame.jpg": "/teencafe/static/media/trytogame.b0a2cfcaa75ca74ca597.jpg",
+    "static/media/gamingimagetwo.jpg": "/teencafe/static/media/gamingimagetwo.3f0d4f35234c6326d444.jpg",
+    "static/media/gamingtext.jpg": "/teencafe/static/media/gamingtext.d6310f74be9385721e67.jpg",
+    "static/media/inverselogo.png": "/teencafe/static/media/inverselogo.17d19960146ab0c37f2d.png",
+    "static/media/cafelogo.png": "/teencafe/static/media/cafelogo.1abcb376681ea3badbcd.png",
+    "index.html": "/teencafe/index.html",
+    "main.100168e0.css.map": "/teencafe/static/css/main.100168e0.css.map",
+    "main.fecd7019.js.map": "/teencafe/static/js/main.fecd7019.js.map",
+    "787.4a634d08.chunk.js.map": "/teencafe/static/js/787.4a634d08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.100168e0.css",
+    "static/js/main.fecd7019.js"
+  ]
+}
