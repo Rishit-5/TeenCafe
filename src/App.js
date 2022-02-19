@@ -1,7 +1,7 @@
 import './App.css';
 import BootstrapCarousel from './BootstrapCarousel';
 import BootstrapNavbar from "./BootstrapNavbar";
-import {BrowserRouter as Router, Route, Link, BrowserRouter, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, BrowserRouter, Switch, HashRouter} from 'react-router-dom';
 import Home from "./components/Home"
 import SignUp from "./components/SignUp";
 import Footer from "./components/footer"
@@ -9,7 +9,8 @@ import Footer from "./components/footer"
 function App() {
     return (
             <div className="App">
-                <BrowserRouter basename="/TeenCafe">
+                <HashRouter>
+                    <div>
                     <BootstrapNavbar />
                         <div className="pl-20">
                     <Switch>
@@ -18,7 +19,8 @@ function App() {
                     </Switch>
                         </div>
                     <Footer />
-                </BrowserRouter>
+                    </div>
+                </HashRouter>
             </div>
 
     );
