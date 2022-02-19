@@ -9,12 +9,12 @@ import Footer from "./components/footer"
 function App() {
     return (
             <div className="App">
-                <BrowserRouter>
+                <BrowserRouter basename="/TeenCafe">
                     <BootstrapNavbar />
                         <div className="pl-20">
                     <Switch>
-                        <Route exact path='/TeenCafe' component={Home} />
-                        <Route exact path='/TeenCafe/signup' component={SignUp} />
+                        <Route exact path='/' component={Home} />
+                        <Route exact path='/TeenCafe' component={SignUp} />
                     </Switch>
                         </div>
                     <Footer />
