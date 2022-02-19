@@ -13,8 +13,8 @@ function App() {
                     <BootstrapNavbar />
                         <div className="pl-20">
                     <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route exact path='/signup' component={SignUp} />
+                        <Route path='/' component={Home} />
+                        <Route path='/signup' component={SignUp} />
                     </Switch>
                         </div>
                     <Footer />
