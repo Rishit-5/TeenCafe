@@ -8,7 +8,7 @@ export default function BootstrapNavbar() {
         <div>
             <Navbar bg="transparent" variant="dark" fixed="top">
                 <Container>
-                    <Navbar.Brand as = {Link} to="/">
+                    <Navbar.Brand as = {Link} to="/TeenCafe">
                         <img
                             alt=""
                             src={mainlogo}
