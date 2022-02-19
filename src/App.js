@@ -9,13 +9,13 @@ import Footer from "./components/footer"
 function App() {
     return (
             <div className="App">
-                <HashRouter>
+                <HashRouter basename={process.env.PUBLIC_URL + "/"}>
                     <div>
                     <BootstrapNavbar />
                         <div className="pl-20">
                     <Switch>
                         <Route exact path='/' component={Home} />
-                        <Route path='/signup' component={SignUp} />
+                        <Route exact path='/signup' component={SignUp} />
                     </Switch>
                         </div>
                     <Footer />

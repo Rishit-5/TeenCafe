@@ -1,13 +1,14 @@
 import React from 'react';
 import {Container, Nav, Navbar} from 'react-bootstrap';
 import mainlogo from './assets/cafelogo.png';
+import { Link } from "react-router-dom";
 
 export default function BootstrapNavbar() {
     return (
         <div>
             <Navbar bg="transparent" variant="dark" fixed="top">
                 <Container>
-                    <Navbar.Brand href="/TeenCafe">
+                    <Navbar.Brand href="/">
                         <img
                             alt=""
                             src={mainlogo}
@@ -17,7 +18,7 @@ export default function BootstrapNavbar() {
                         />{' '}
                     </Navbar.Brand>
                     <Nav className="justify-content-end text-white">
-                        <Nav.Link href="/TeenCafe/signup" className="text-white"><b>SIGN UP</b></Nav.Link>
+                        <Nav.Link as= {Link} to="/signup" className="text-white"><b>SIGN UP</b></Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
