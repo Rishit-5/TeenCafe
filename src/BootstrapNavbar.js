@@ -7,7 +7,7 @@ export default function BootstrapNavbar() {
         <div>
             <Navbar bg="transparent" variant="dark" fixed="top">
                 <Container>
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand to="/">
                         <img
                             alt=""
                             src={mainlogo}
@@ -17,7 +17,7 @@ export default function BootstrapNavbar() {
                         />{' '}
                     </Navbar.Brand>
                     <Nav className="justify-content-end text-white">
-                        <Nav.Link href="/signup" className="text-white"><b>SIGN UP</b></Nav.Link>
+                        <Nav.Link to="/signup" className="text-white"><b>SIGN UP</b></Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
