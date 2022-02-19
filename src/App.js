@@ -9,11 +9,11 @@ import Footer from "./components/footer"
 function App() {
     return (
             <div className="App">
-                <BrowserRouter basename="/">
+                <BrowserRouter basename="/TeenCafe">
                     <BootstrapNavbar />
                         <div className="pl-20">
                     <Switch>
-                        <Route exact path='/' component={Home} />
+                        <Route exact path='/TeenCafe' component={Home} />
                         <Route path='/signup' component={SignUp} />
                     </Switch>
                         </div>
