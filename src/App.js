@@ -14,7 +14,7 @@ function App() {
                         <div className="pl-20">
                     <Switch>
                         <Route exact path='/' component={Home} />
-                        <Route exact path='/TeenCafe' component={SignUp} />
+                        <Route exact path='/signup' component={SignUp} />
                     </Switch>
                         </div>
                     <Footer />
