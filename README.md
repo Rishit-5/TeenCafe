@@ -6,7 +6,7 @@
 </p>
 
 ## Description
-A React.js sign-up form for the "Calgary Teen Cafe" (yycteencafe.ca) non-profit organization. The organization strives to create a safe space for teenagers to enjoy, connect, and participate in activities with one another. Through gaming consoles, Pc's, foosball tables, biweekly tournaments, and more, the is hope that teenagers will visit our space and leave with positive experiences and new friendships.
+A React.js sign-up form for the "Calgary Teen Cafe" (yycteencafe.ca) non-profit organization. The organization strives to create a safe space for teenagers to enjoy, connect, and participate in activities with one another. Through gaming consoles, Pc's, foosball tables, biweekly tournaments, and more, the hope is that teenagers will visit our space and leave with positive experiences and new friendships.
 
 
 ## Deployment Steps (Terminal)
