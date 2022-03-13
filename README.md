@@ -1,6 +1,6 @@
 <p align="center">
   <a href="">
-  <img src="./TeenCafe/src/assets/cafelogo.png" alt="wow" width="450">
+  <img src="https://yycteencafe.ca/static/media/cafelogo.1abcb376681ea3badbcd.png" alt="wow" width="450">
   </a>
   <br><br>
 </p>
