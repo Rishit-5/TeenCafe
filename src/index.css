@@ -22,10 +22,12 @@ code {
   font-family: Open Sans;
 }
 
-
+.caro {
+  height: 100%;
+}
 
 .footer-distributed{
-  background: #0cabf5ff;
+  background: #222222;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -44,7 +46,10 @@ code {
 /* Footer left */
 
 .footer-distributed .footer-left{
-  width: 40%;
+  width: 50%;
+}
+.carousel {
+  height: 100px;
 }
 
 /* The company logo */
@@ -72,7 +77,7 @@ code {
 
 .footer-distributed .footer-company-name{
   color:  #222;
-  font-size: 14px;
+  font-size: 6px;
   font-weight: normal;
   margin: 0;
 }
@@ -97,7 +102,7 @@ code {
 }
 
 .footer-distributed .footer-center i.fa-envelope{
-  font-size: 17px;
+  font-size: 6px;
   line-height: 38px;
 }
 
@@ -118,15 +123,15 @@ code {
 
 .footer-distributed .footer-center p a{
   color:  lightseagreen;
+  font-size: 17px;
   text-decoration: none;;
 }
 
 .footer-distributed .footer-links a:before {
   content: "|";
   font-weight:300;
-  font-size: 20px;
   left: 0;
-  color: #fff;
+  color: #cb1515;
   display: inline-block;
   padding-right: 5px;
 }
@@ -151,7 +156,7 @@ code {
 
 .footer-distributed .footer-company-about span{
   display: block;
-  color:  #ffffff;
+  color: #ac2525;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;

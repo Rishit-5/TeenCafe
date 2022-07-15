@@ -5,23 +5,28 @@ import {BrowserRouter as Router, Route, Link, BrowserRouter, Switch, HashRouter}
 import Home from "./components/Home"
 import SignUp from "./components/SignUp";
 import Footer from "./components/footer"
+import About from "./components/About";
 
 function App() {
     return (
-            <div className="App">
-                <HashRouter basename={process.env.PUBLIC_URL + "/"}>
-                    <div>
+        <div className="App">
+            <BrowserRouter>
+                <div>
                     <BootstrapNavbar />
-                        <div className="pl-20">
-                    <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route exact path='/signup' component={SignUp} />
-                    </Switch>
-                        </div>
-                    <Footer />
+                    <div className="pl-20">
+                        <Switch>
+                            <Route exact path='/' component={Home} />
+                            <Route path='/about' component={About} />
+                            <Route path='/events' component={About} />
+                            <Route path='/reservations' component={About} />
+                            <Route path='/signup' component={About} />
+
+                        </Switch>
                     </div>
-                </HashRouter>
-            </div>
+                    <Footer />
+                </div>
+            </BrowserRouter>
+        </div>
 
     );
 }

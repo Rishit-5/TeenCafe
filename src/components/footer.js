@@ -29,11 +29,11 @@ function Footer() {
                     </div>
 
                     <div>
-                        <i className="fa fa-envelope"></i>
+                        <i className="fa fa-phone"></i>
                         <p><a href="mailto:calgaryteencafe@gmail.com">CalgaryTeenCafe@gmail.com</a></p>
                     </div>
                     <div>
-                        <i className="fa fa-envelope"></i>
+                        <i className="fa fa-phone"></i>
                         <p><a href="https://discord.gg/TmRyb88ZmV">Discord Server</a></p>
                     </div>
 
