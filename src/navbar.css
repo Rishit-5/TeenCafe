@@ -69,7 +69,7 @@ li {
 ul {
     color: #ffeedd;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 725px) {
     .hamburger {
         display: block;
     }

@@ -1,7 +1,7 @@
 {
   "name": "teen-cafe",
   "version": "0.1.0",
-  "homepage": "https://rishit-5.github.io/TeenCafe",
+  "homepage": "https://rishit-5.github.io/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

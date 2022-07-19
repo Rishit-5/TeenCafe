@@ -43,7 +43,7 @@ const About = () => {
             <div className="card5">
                 <HiDesktopComputer style={{ fill: "url(#blue-gradient)" }} size={300}/>
                 <h1 className="icondesc">Gaming PC's</h1>
-                
+
             </div>
 
             <div className="card5">

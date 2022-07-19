@@ -6,7 +6,7 @@ import Home from "./components/Home"
 import SignUp from "./components/SignUp";
 import Footer from "./components/footer"
 import About from "./components/About";
-
+import Events from "./components/Events";
 function App() {
     return (
         <div className="App">
@@ -17,7 +17,7 @@ function App() {
                         <Switch>
                             <Route exact path='/' component={Home} />
                             <Route path='/about' component={About} />
-                            <Route path='/events' component={About} />
+                            <Route path='/events' component={Events} />
                             <Route path='/reservations' component={About} />
                             <Route path='/signup' component={About} />
 
