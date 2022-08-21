@@ -1,22 +1,58 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Container, Nav, Navbar} from 'react-bootstrap';
 import mainlogo from './assets/cafelogo.png';
 import inverselogo from './assets/inverselogo.png'
 import { Link } from "react-router-dom";
 import "./navbar.css"
-
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import { GoogleLogin } from 'react-google-login';
+import {gapi} from 'gapi-script'
 
 export default function BootstrapNavbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
+    const clientId = "78141841134-fg6mcun8h6kqjfothgljr1hqa1u9igup.apps.googleusercontent.com";
+
+    function handleCallbackResponse(response) {
+        console.log("Encoded JWT ID token: " + response.credential)
+    }
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    useEffect(() => {
+        function start() {
+            gapi.client.init({
+                clientId: clientId,
+                scope: ""
+            })
+        }
+        gapi.load('client:auth2', start)
+    }, [])
+
+    const LogIn = () => {
+        console.log("ehundnhed")
+    }
+
+    const onSuccess = (res) => {
+        console.log("CURRENT USER", res.profileObj )
+    }
+
+    const onFailure = (res) => {
+        console.log("FAILED: ", res)
+    }
+
     return (
         <nav className="navigation">
             <a href="/">
-            <img src = {mainlogo} className="logo"
+                <img src = {mainlogo} className="logo"
 
-                 width = {100}
-                 height = {100}
-             alt="logo"/></a>
+                     width = {100}
+                     height = {100}
+                     alt="logo"/></a>
             <button
                 className="hamburger"
                 onClick={() => {
@@ -58,7 +94,28 @@ export default function BootstrapNavbar() {
                     <li>
                         <a href="/signup">Sign Up</a>
                     </li>
+                    <li>
+                        <a href="#" onClick={handleShow} >Log In</a>
+                    </li>
                 </ul>
+                <Modal show={show} onHide={handleClose} centered>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Log In</Modal.Title>
+                    </Modal.Header>
+
+                    <Modal.Body className = "modalbody">
+                        <GoogleLogin clientId={clientId}
+                                     buttonText="Login"
+                                     onSuccess={onSuccess}
+                                     onFailure={onFailure}
+                                     cookiePolicy={'single_host_origin'}
+                                     isSignedIn={true}
+                                     />
+                    </Modal.Body>
+                    <Modal.Footer>
+
+                    </Modal.Footer>
+                </Modal>
             </div>
         </nav>
     );

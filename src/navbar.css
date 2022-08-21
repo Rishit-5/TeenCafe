@@ -9,7 +9,11 @@
     color: black;
     z-index: 3;
 }
-
+.modalbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .brand-name {
     text-decoration: none;
     color: black;

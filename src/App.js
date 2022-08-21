@@ -19,7 +19,7 @@ function App() {
                             <Route path='/about' component={About} />
                             <Route path='/events' component={Events} />
                             <Route path='/reservations' component={About} />
-                            <Route path='/signup' component={About} />
+                            <Route path='/signup' component={SignUp} />
 
                         </Switch>
                     </div>
