@@ -85,18 +85,18 @@ export default function BootstrapNavbar() {
                     <li>
                         <a href="/about">About</a>
                     </li>
-                    <li>
-                        <a href="/events">Events</a>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <a href="/events">Events</a>*/}
+                    {/*</li>*/}
                     <li>
                         <a href="/reservations">Reservations</a>
                     </li>
                     <li>
                         <a href="/signup">Sign Up</a>
                     </li>
-                    <li>
-                        <a href="#" onClick={handleShow} >Log In</a>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <a href="#" onClick={handleShow} >Log In</a>*/}
+                    {/*</li>*/}
                 </ul>
                 <Modal show={show} onHide={handleClose} centered>
                     <Modal.Header closeButton>

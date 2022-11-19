@@ -7,23 +7,24 @@ import SignUp from "./components/SignUp";
 import Footer from "./components/footer"
 import About from "./components/About";
 import Events from "./components/Events";
+import Reservations from "./components/Reservations";
+
 function App() {
     return (
         <div className="App">
             <BrowserRouter>
                 <div>
-                    <BootstrapNavbar />
+                    <BootstrapNavbar/>
                     <div className="pl-20">
                         <Switch>
-                            <Route exact path='/' component={Home} />
-                            <Route path='/about' component={About} />
-                            <Route path='/events' component={Events} />
-                            <Route path='/reservations' component={About} />
-                            <Route path='/signup' component={SignUp} />
-
+                            <Route exact path='/' component={Home}/>
+                            <Route path='/about' component={About}/>
+                            <Route path='/events' component={Events}/>
+                            <Route path='/reservations' component={Reservations}/>
+                            <Route path='/signup' component={SignUp}/>
                         </Switch>
                     </div>
-                    <Footer />
+                    <Footer/>
                 </div>
             </BrowserRouter>
         </div>
