@@ -85,9 +85,9 @@ export default function BootstrapNavbar() {
                     <li>
                         <a href="/about">About</a>
                     </li>
-                    {/*<li>*/}
-                    {/*    <a href="/events">Events</a>*/}
-                    {/*</li>*/}
+                    <li>
+                        <a href="/events">Events</a>
+                    </li>
                     <li>
                         <a href="/reservations">Reservations</a>
                     </li>

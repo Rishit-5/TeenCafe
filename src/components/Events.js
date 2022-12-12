@@ -28,47 +28,17 @@ const About = () => {
             <div className="offer">
                 <h1 className="head">Events</h1>
             </div>
-            <div className="card4">
-                <img
-                    src="https://images.squarespace-cdn.com/content/v1/536fe0f6e4b08758c320b79a/1639512806072-RIVUV6RF0MU9SSE797D1/image-asset.jpeg"  alt="event"
-                    width = {400}
-                    height = {400}
-                />
-                <h2>July 19, 2022</h2>
+            <div className="card5">
+                <div className = "imgOverlay">
+                    <img
+                    src="http://s14rob.com/wp-content/uploads/2014/04/rocket_launch1.jpg"  alt="event"
+                    className = "bigImg"/>
+                    <div className="centered">LAUNCH DAY</div>
+                </div>
+                <h2>December 17, 2022</h2>
                 <h5>They're using our own satellites against us. And the clock is ticking. I gave it a cold? I gave it a virus. A computer virus. Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right?</h5>
 
             </div>
-            <div className="card4">
-                <img
-                    src="https://images.squarespace-cdn.com/content/v1/536fe0f6e4b08758c320b79a/1639512806072-RIVUV6RF0MU9SSE797D1/image-asset.jpeg"  alt="event"
-                    width = {400}
-                    height = {400}
-                />
-                <h2>July 19, 2022</h2>
-                <h5>They're using our own satellites against us. And the clock is ticking. I gave it a cold? I gave it a virus. A computer virus. Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right?</h5>
-
-            </div>
-            <div className="card7">
-                <img
-                    src="https://images.squarespace-cdn.com/content/v1/536fe0f6e4b08758c320b79a/1639512806072-RIVUV6RF0MU9SSE797D1/image-asset.jpeg"  alt="event"
-                    width = {400}
-                    height = {400}
-                />
-                <h2>July 19, 2022</h2>
-                <h5>They're using our own satellites against us. And the clock is ticking. I gave it a cold? I gave it a virus. A computer virus. Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right?</h5>
-
-            </div>
-            <div className="card7">
-                <img
-                    src="https://images.squarespace-cdn.com/content/v1/536fe0f6e4b08758c320b79a/1639512806072-RIVUV6RF0MU9SSE797D1/image-asset.jpeg"  alt="event"
-                    width = {400}
-                    height = {400}
-                />
-                <h2>July 19, 2022</h2>
-                <h5>They're using our own satellites against us. And the clock is ticking. I gave it a cold? I gave it a virus. A computer virus. Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right?</h5>
-
-            </div>
-            <button style={{width: "300px"}} onClick={Push}>Helloooooo</button>
         </div>
     )
 }
